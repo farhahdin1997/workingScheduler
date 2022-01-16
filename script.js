@@ -1,6 +1,7 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+
 $(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
@@ -12,34 +13,7 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
    
-    function timeTracker() {
-        //get current number of hours.
-        var currentTime = moment().hour();
-
-        // loop over time blocks
-        $(".time-block").each(function () {
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-
-            // To check the time and add the classes for background indicators
-            if (blockTime < currentTime) {
-                $(this).removeClass("future");
-                $(this).removeClass("present");
-                $(this).addClass("past");
-            }
-            else if (blockTime === currentTime) {
-                $(this).removeClass("past");
-                $(this).removeClass("future");
-                $(this).addClass("present");
-            }
-            else {
-                $(this).removeClass("present");
-                $(this).removeClass("past");
-                $(this).addClass("future");
-
-            }
-        })
-    }
-
+    
     // Get item from local storage if any
     $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
