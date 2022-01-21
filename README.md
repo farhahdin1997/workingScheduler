@@ -16,6 +16,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persis
 
+[screencapture-farhahdin1997-github-io-workingScheduler-2022-01-21-18_13_49.pdf](https://github.com/farhahdin1997/workingScheduler/files/7915788/screencapture-farhahdin1997-github-io-workingScheduler-2022-01-21-18_13_49.pdf)
 
-Deployment - https://farhahdin1997.github.io/workingScheduler/
+Deployment - https://farhahdin1997.github.io/workingScheduler/ <br>
  Repositories -  https://github.com/farhahdin1997/workingScheduler
